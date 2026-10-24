@@ -1,0 +1,43 @@
+name: FFABlockProtect
+version: '1.0.0'
+main: de.tibyte.fFABlockProtect.FFABlockProtect
+api-version: '1.21'
+authors: [ TiByte ]
+commands:
+  arena:
+    description: Öffnet das Arena-Einstellungs-Menü
+    usage: /arena
+    permission: arena.edit
+  arenaedit:
+    description: Schaltet den Arena-Edit-Modus ein/aus
+    usage: /arenaedit
+    permission: arena.edit
+  arenatime:
+    description: Setzt die Zeit bis zum Arena-Reset in Minuten
+    usage: /arenatime <Minuten>
+    permission: arena.edit
+  arenastart:
+    description: Startet den Arena-Reset-Timer
+    usage: /arenastart
+    permission: arena.edit
+  arenareset:
+    description: Setzt die Arena sofort zurück
+    usage: /arenareset
+    permission: arena.edit
+  setcorner1:
+    description: Setzt die erste Ecke der Arena
+    usage: /setcorner1
+    permission: arena.edit
+  setcorner2:
+    description: Setzt die zweite Ecke der Arena
+    usage: /setcorner2
+    permission: arena.edit
+  stonebox:
+    description: Sets the corners of the stonebox mining area
+    usage: /stonebox <pos1|pos2>
+    permission: arena.edit
+
+permissions:
+  arena.edit:
+    description: Berechtigung für alle Admin-Arena-Kommandos
+    default: op
